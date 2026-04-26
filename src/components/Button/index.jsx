@@ -2,15 +2,15 @@ import './styles.css'
 import download from '../../assets/icones/download.png'
 import linkedin from '../../assets/icones/linkedin.png'
 
-const Button = ({buttonType}) => {
+const Button = ({ buttonType }) => {
     const getButton = () => {
         switch (buttonType) {
             case 'downloadResume':
                 return {
                     icon: download,
                     href: '/Curriculo_Daniella_Dantas.docx',
-                    download: '/Curriculo_Daniella_Dantas.docx',
-                    buttonText: 'Baixar currículo',
+                    download: 'Curriculo_Daniella_Dantas.docx',
+                    buttonText: 'Baixar curriculo',
                     colorClass: 'downloadBtn'
                 }
 
@@ -18,8 +18,8 @@ const Button = ({buttonType}) => {
                 return {
                     icon: download,
                     href: '/Curriculo_Daniella_Dantas.docx',
-                    download: '/Curriculo_Daniella_Dantas.docx',
-                    buttonText: 'Baixar Currículo Completo',
+                    download: 'Curriculo_Daniella_Dantas.docx',
+                    buttonText: 'Baixar Curriculo Completo',
                     colorClass: 'downloadBtn'
                 }
 
@@ -31,18 +31,31 @@ const Button = ({buttonType}) => {
                     buttonText: 'Confira o meu LinkedIn',
                     colorClass: 'linkedinBtn'
                 }
+
+            default:
+                return {
+                    icon: download,
+                    href: '#',
+                    download: null,
+                    buttonText: '',
+                    colorClass: ''
+                }
         }
     }
 
+    const button = getButton()
+
     return (
-        <div className={`button ${getButton().colorClass}`}>
-            <img src={getButton().icon} alt=""/>
-            <a 
-                href={getButton().href} 
-                download={getButton().download}
-                target={getButton().download ? null : '_blank'}
+        <div className={`button ${button.colorClass}`}>
+            <img src={button.icon} alt="" />
+            <a
+                href={button.href}
+                download={button.download}
+                target={button.download ? undefined : '_blank'}
+                rel={button.download ? undefined : 'noreferrer'}
             >
-                {getButton().buttonText}</a>
+                {button.buttonText}
+            </a>
         </div>
     )
 }
