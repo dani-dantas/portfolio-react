@@ -1,0 +1,40 @@
+#skills {
+  background-image: url("../../assets/fotos/fundo.jpg");
+  background-size: cover;
+
+  #overlay {
+    height: 100vh;
+    width: 100%;
+    background-color: #00000070;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      padding-bottom: 68px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 800px;
+      gap: 27px;
+      justify-content: center;
+      padding-bottom: 164px;
+    }
+
+    li {
+      color: var(--secondary-color);
+      background-color: #ffffff30;
+      padding: 12px 17px;
+      border-radius: var(--border-radius-base);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .downloadBtn {
+      background-color: var(--brand-color);
+    }
+  }
+}

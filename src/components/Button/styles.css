@@ -1,0 +1,27 @@
+.button {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 14px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  img {
+    width: 16px;
+  }
+
+  a {
+    color: var(--secondary-color);
+    padding-left: 10px;
+    border-radius: var(--border-radius-base);
+  }
+}
+
+.downloadBtn {
+  background-color: var(--highlight-color);
+}
+
+.linkedinBtn {
+  background-color: var(--brand-color);
+}

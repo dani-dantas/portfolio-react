@@ -1,0 +1,61 @@
+#sobreMim {
+  background-color: var(--darker-background);
+  display: flex;
+
+  #sobreMimTextosFlexContainer {
+    width: 60vw;
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #sobreMimTextosFlexItem {
+      display: flex;
+      flex-direction: column;
+      text-align: justify;
+      width: 80%;
+    }
+  }
+
+  #fotoSobreMim {
+    background-image: url("../../assets/fotos/foto-sobremim.png");
+    width: 40vw;
+    background-size: cover;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    padding: 45px 0 56px 0;
+  }
+}
+
+@media (orientation: portrait) {
+  #sobreMim {
+    #sobreMimTextosFlexContainer {
+      width: 100vw;
+      padding-top: 3.5rem;
+
+      #sobreMimTextosFlexItem {
+        align-items: center;
+
+        .titulo {
+          padding-top: 2rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+          padding: 1.5rem 0 2rem 0;
+        }
+
+        .button {
+          margin-bottom: 3.5rem;
+        }
+      }
+    }
+
+    #fotoSobreMim {
+      display: none;
+    }
+  }
+}

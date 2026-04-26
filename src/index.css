@@ -1,0 +1,38 @@
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --brand-color: purple;
+  --highlight-color: tomato;
+  --darker-color: #500050;
+  --darker-background: #222222;
+  --border-radius-base: 10px;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.titulo {
+  color: var(--secondary-color);
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.lineHeight {
+  line-height: 2.4rem;
+}
+
+@media (orientation: portrait) {
+  .titulo {
+    font-size: 2.6rem;
+  }
+}

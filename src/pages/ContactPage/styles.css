@@ -1,0 +1,117 @@
+#contato {
+  background-color: var(--highlight-color);
+  display: flex;
+
+  #contatoTextos {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #contatoTextosChild {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    h1 {
+      padding-bottom: 60px;
+    }
+
+    img {
+      width: 28px;
+    }
+
+    p {
+      color: var(--secondary-color);
+      font-size: 1.5rem;
+    }
+  }
+
+  #fotoContato {
+    background-image: url("../../assets/fotos/foto-contato.png");
+    width: 40vw;
+    background-size: cover;
+  }
+}
+
+#emailWhatsapp {
+  font-style: normal;
+  padding-top: 40px;
+  padding-bottom: 100px;
+
+  .contatoItem {
+    display: flex;
+    padding-top: 12px;
+
+    img {
+      width: 28px;
+    }
+
+    p {
+      padding-left: 15px;
+    }
+  }
+}
+
+#redesSociais {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+
+  a {
+    background-color: #ff8570;
+    padding: 12px;
+    border-radius: var(--border-radius-base);
+  }
+
+  img {
+    height: 28px;
+  }
+}
+
+@media (orientation: portrait) {
+  #contato {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
+
+    #fotoContato {
+      height: 30vh;
+      width: 30vh;
+      background-position: center 10%;
+      border-radius: 50%;
+      margin-bottom: 3.5rem;
+    }
+
+    #contatoTextos {
+      width: 100vw;
+
+      .titulo {
+        text-align: center;
+        padding-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+
+      #contatoTextosChild {
+        align-items: center;
+      }
+    }
+
+    .contatoItem:last-child {
+      text-align: start;
+
+      img {
+        width: 1.75rem;
+        height: 1.75rem;
+      }
+    }
+  }
+}

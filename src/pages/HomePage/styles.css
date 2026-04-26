@@ -1,0 +1,64 @@
+#home {
+  background-color: var(--brand-color);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+
+  #foto {
+    width: 40vw;
+    height: 100vh - 65px;
+    background-image: url("../../assets/fotos/foto.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  #homeConteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+
+    h2 {
+      color: violet;
+      font-weight: 400;
+      font-size: 2.4rem;
+      padding: 20px 0 50px 0;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  #home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #foto {
+      height: 30vh;
+      width: 30vh;
+      background-position: center 40%;
+      border-radius: 50%;
+      box-shadow:
+        0 15px 0 var(--highlight-color),
+        0 35px 0 var(--darker-color);
+      margin: 0 auto 3.8rem auto;
+      align-self: center;
+    }
+
+    #homeTextos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .titulo {
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 1.7rem;
+        text-align: center;
+      }
+    }
+  }
+}

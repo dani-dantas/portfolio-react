@@ -1,0 +1,36 @@
+nav {
+  background-color: #ededed;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 63px;
+  box-shadow: 0 5px 10px #00000030;
+
+  #logo {
+    height: 40px;
+  }
+
+  #navLinks {
+    display: flex;
+
+    li {
+      padding-left: 73px;
+    }
+
+    li:last-child {
+      font-weight: bold;
+    }
+
+    a {
+      color: var(--primary-color);
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  nav {
+    display: none;
+  }
+}
