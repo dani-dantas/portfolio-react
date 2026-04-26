@@ -9,7 +9,7 @@ const Button = ({buttonType}) => {
                 return {
                     icon: download,
                     href: '/Curriculo_Daniella_Dantas.docx',
-                    download: '/Currículo-Daniella-Dantas.docx',
+                    download: '/Curriculo_Daniella_Dantas.docx',
                     buttonText: 'Baixar currículo',
                     colorClass: 'downloadBtn'
                 }
@@ -18,7 +18,7 @@ const Button = ({buttonType}) => {
                 return {
                     icon: download,
                     href: '/Curriculo_Daniella_Dantas.docx',
-                    download: '/Currículo-Daniella-Dantas.docx',
+                    download: '/Curriculo_Daniella_Dantas.docx',
                     buttonText: 'Baixar Currículo Completo',
                     colorClass: 'downloadBtn'
                 }
