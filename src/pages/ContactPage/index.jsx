@@ -28,7 +28,7 @@ const ContactPage = () => (
                     <a href="https://github.com/dani-dantas" target="_blank" aria-label="Perfil de Daniella no GitHub">
                         <img src={github} alt=""/>
                     </a>
-                    <a href="https://www.instagram.com/danidantx/" target="_blank" aria-label="Perfil de Daniella no Instagram">
+                    <a href="https://www.instagram.com/danidantasdev/" target="_blank" aria-label="Perfil de Daniella no Instagram">
                         <img src={instagram} alt=""/>
                     </a>
                 </div>
