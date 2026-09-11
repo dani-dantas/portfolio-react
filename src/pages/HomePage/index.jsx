@@ -7,7 +7,7 @@ const HomePage = () => (
         <div id="homeConteudo">
             <div id="homeTextos">
                 <h1 className="titulo">Daniella Dantas</h1>
-                <h2>Desenvolvedora Front-End</h2>
+                <h2>Desenvolvedora de Software</h2>
                 <Button buttonType="downloadResume" />
             </div>
         </div>

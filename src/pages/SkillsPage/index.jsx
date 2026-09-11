@@ -6,12 +6,15 @@ const SkillsPage = () => (
         <div id="overlay">
             <h1 className="titulo">Skills</h1>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>APIs REST</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
                 <li>JavaScript</li>
-                <li>ES6+</li>
                 <li>React</li>
-                <li>Inglês</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
                 <li>Git</li>
                 <li>GitHub</li>
             </ul>
