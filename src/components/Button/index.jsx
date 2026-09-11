@@ -8,8 +8,8 @@ const Button = ({ buttonType }) => {
             case 'downloadResume':
                 return {
                     icon: download,
-                    href: '/Curriculo_Daniella_Dantas.docx',
-                    download: 'Curriculo_Daniella_Dantas.docx',
+                    href: '/curriculo-geral-daniella.pdf',
+                    download: 'curriculo-geral-daniella.pdf',
                     buttonText: 'Baixar curriculo',
                     colorClass: 'downloadBtn'
                 }
@@ -17,8 +17,8 @@ const Button = ({ buttonType }) => {
             case 'downloadCompleteResume':
                 return {
                     icon: download,
-                    href: '/Curriculo_Daniella_Dantas.docx',
-                    download: 'Curriculo_Daniella_Dantas.docx',
+                    href: '/curriculo-geral-daniella.pdf',
+                    download: 'curriculo-geral-daniella.pdf',
                     buttonText: 'Baixar Curriculo Completo',
                     colorClass: 'downloadBtn'
                 }
